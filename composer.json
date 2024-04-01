@@ -1,5 +1,6 @@
 {
   "require": {
-    "spatie/fork": ">=1.2.2"
+    "spatie/fork": ">=1.2.2",
+    "ext-pcntl": "*"
   }
 }
