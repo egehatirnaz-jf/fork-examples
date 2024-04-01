@@ -12,7 +12,7 @@ function zzz(int $milliseconds): int
     return $milliseconds;
 }
 
-$randArr = [97, 26, 75, 29, 4, 51, 60, 81, 69, 86];
+$randArr = [970, 260, 750, 40];
 
 // We need as many functions as our elements in randArr.
 $sleeperFunctions = array_map(function ($element) {
