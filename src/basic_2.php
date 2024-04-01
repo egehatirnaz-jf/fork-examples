@@ -12,6 +12,14 @@ $results = Fork::new()
             echo "Parent process says hi!" . PHP_EOL;
         }
     )
+    ->after(
+        child: function (int $i) {
+            echo "Child is done (#$i)" . PHP_EOL;
+        },
+        parent: function (int $i) {
+            echo "Parent is done (#$i)" . PHP_EOL;
+        }
+    )
     ->run(
         function () {
             sleep(2);
